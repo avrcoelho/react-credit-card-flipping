@@ -17,7 +17,7 @@ interface Props {
   brand?: string;
   name: string;
   number: string;
-  expirate: string;
+  expiry: string;
   cvv: number | string;
   backgroundColor?: string;
   filledBackgroundColor?: string;
@@ -29,7 +29,7 @@ const Card: React.FC<Props> = ({
   brand,
   name,
   number,
-  expirate,
+  expiry,
   cvv,
   backgroundColor,
   filledBackgroundColor,
@@ -69,7 +69,7 @@ const Card: React.FC<Props> = ({
         cvv={String(cvv).length > 2}
         backgroundColor={backgroundColor}
         filledBackgroundColor={filledBackgroundColor}
-        notEmptyCard={!!name && !!number && !!expirate}>
+        notEmptyCard={!!name && !!number && !!expiry}>
         <div className="card__front card__part" data-testid="card-front">
           <Brand>
             {brand && <img src={brand} alt="Brand" data-testid="brand" />}
@@ -82,8 +82,8 @@ const Card: React.FC<Props> = ({
               <CardName data-testid="name">
                 {name || emptyName || 'Cardholder Name'}
               </CardName>
-              <CardExpirationDate data-testid="expirate">
-                {expirate.substr(0, 5) || '00/00'}
+              <CardExpirationDate data-testid="expiry">
+                {expiry.substr(0, 5) || '00/00'}
               </CardExpirationDate>
             </NameAndDate>
           </CardInfo>
