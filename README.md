@@ -23,6 +23,7 @@ import Card from 'react-credit-card-with-flip';
 export default function PaymentForm() {
   const [cardNumber, setCardNumber] = useState('');
   const [cardName, setCardName] = useState('');
+  const [cardBrand, setCardBrand] = useState('');
   const [cardExpiry, setCardExpiry] = useState('');
   const [cardCVV, setCardCVV] = useState('');
   const [focusCVV, setFocusCVV] = useState(false);
@@ -67,8 +68,8 @@ export default function PaymentForm() {
 - `expiry` {string}: Card expiry date `01/20` - required
 - `cvv` {string|number}: Card CVC/CVV - required
 - `brand` {string}: Card brand `URL` - optional
-- `backgroundColor` {string}: Card background color when are empty. `Default: '#DDD'` - optional
-- `filledBackgroundColor` {string}: Card background color when aren´t empty. `Default: '#134869'` - optional
+- `backgroundColor` {string}: Card background color when are empty. `Default: #DDD` - optional
+- `filledBackgroundColor` {string}: Card background color when aren´t empty. `Default: #134869` - optional
 - `flipCard` {boolean} Flip card when focus or blur CVV input - optional
 - `emptyName` {string} Default value when name is empty. `Default: Cardholder Name` - optional
 
