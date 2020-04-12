@@ -45,7 +45,7 @@ export default function PaymentForm {
             onChange={event => setCardNumber(event.target.value)}
           />
           ...
-        	<input
+          <input
             type="tel"
             name="cvv"
             placeholder="CVV"
