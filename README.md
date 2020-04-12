@@ -16,7 +16,7 @@ yarn add react-credit-card-with-flip
 
 ## Usage
 
-```
+```diff
 import React, { useState } from 'react';
 import Card from 'react-credit-card-with-flip';
 
@@ -38,7 +38,7 @@ export default function PaymentForm {
           flipCard={focusCVV}
         />
         <form>
-        	<input
+          <input
             type="tel"
             name="number"
             placeholder="Card Number"
