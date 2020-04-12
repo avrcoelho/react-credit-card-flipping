@@ -1,26 +1,26 @@
-# React Credit Card with Flip
+# React Credit Card Flipping
 
-Credit card with flip to ReactJS
+Credit card flipping to ReactJS
 
 ![Demo](demo.gif)
 
 ## Install
 
 ```shell
-   npm install react-credit-card-with-flip
+   npm install react-credit-card-flipping
 ```
 
 ou
 
 ```shell
-yarn add react-credit-card-with-flip
+yarn add react-credit-card-flipping
 ```
 
 ## Usage
 
 ```js
 import React, { useState } from 'react';
-import Card from 'react-credit-card-with-flip';
+import Card from 'react-credit-card-flipping';
 
 export default function PaymentForm() {
   const [cardNumber, setCardNumber] = useState('');
