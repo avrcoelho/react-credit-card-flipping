@@ -1,4 +1,4 @@
-# React Credit Card With Flip
+# React Credit Card with Flip
 
 Credit card with flip to ReactJS
 
@@ -20,7 +20,7 @@ yarn add react-credit-card-with-flip
 import React, { useState } from 'react';
 import Card from 'react-credit-card-with-flip';
 
-export default function PaymentForm {
+export default function PaymentForm() {
   const [cardNumber, setCardNumber] = useState('');
   const [cardName, setCardName] = useState('');
   const [cardExpiry, setCardExpiry] = useState('');
@@ -59,3 +59,21 @@ export default function PaymentForm {
   }
 }
 ```
+
+## Props
+
+- `name` {string}: Cardholder Name - required
+- `number` {string|number}: Card number - required
+- `expiry` {string}: Card expiry date `01/20` - required
+- `cvv` {string|number}: Card CVC/CVV - required
+- `brand` {string}: Card brand `URL` - optional
+- `backgroundColor` {string}: Card background color when are empty. `Default: '#DDD'` - optional
+- `filledBackgroundColor` {string}: Card background color when aren´t empty. `Default: '#134869'` - optional
+- `flipCard` {boolean} Flip card when focus or blur CVV input - optional
+- `emptyName` {string} Default value when name is empty. `Default: Cardholder Name` - optional
+
+## LICENSE
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+Development by: [André Coelho](https://github.com/avrcoelho)

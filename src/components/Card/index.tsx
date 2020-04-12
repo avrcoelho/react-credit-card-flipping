@@ -38,7 +38,7 @@ const Card: React.FC<Props> = ({
 }) => {
   const cardNumber = useMemo(() => {
     let formattedValue;
-    const value = number.replace(/\D/g, '');
+    const value = String(number).replace(/\D/g, '');
     // american express, 15 digits
     if (/^3[47]\d{0,13}$/.test(value)) {
       formattedValue = value
