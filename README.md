@@ -2,21 +2,23 @@
 
 Credit card with flip to ReactJS
 
+![Demo](demo.gif)
+
 ## Install
 
-```sh
+```shell
    npm install react-credit-card-with-flip
 ```
 
 ou
 
-```sh
+```shell
 yarn add react-credit-card-with-flip
 ```
 
 ## Usage
 
-```diff
+```js
 import React, { useState } from 'react';
 import Card from 'react-credit-card-with-flip';
 
