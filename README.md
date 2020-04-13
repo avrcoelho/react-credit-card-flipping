@@ -22,7 +22,7 @@ yarn add react-credit-card-flipping
 import React, { useState } from 'react';
 import Card from 'react-credit-card-flipping';
 
-export default function PaymentForm() {
+export default function App() {
   const [cardNumber, setCardNumber] = useState('');
   const [cardName, setCardName] = useState('');
   const [cardBrand, setCardBrand] = useState('');
@@ -30,36 +30,34 @@ export default function PaymentForm() {
   const [cardCVV, setCardCVV] = useState('');
   const [focusCVV, setFocusCVV] = useState(false);
 
-  render() {
-    return (
-      <div id="form">
-        <Card
-          number={cardNumber}
-          name={cardName}
-          expiry={cardExpiry}
-          cvv={cardCVV}
-          flipCard={focusCVV}
+  return (
+    <div id="form">
+      <Card
+        number={cardNumber}
+        name={cardName}
+        expiry={cardExpiry}
+        cvv={cardCVV}
+        flipCard={focusCVV}
+      />
+      <form>
+        <input
+          type="tel"
+          name="number"
+          placeholder="Card Number"
+          onChange={(event) => setCardNumber(event.target.value)}
         />
-        <form>
-          <input
-            type="tel"
-            name="number"
-            placeholder="Card Number"
-            onChange={event => setCardNumber(event.target.value)}
-          />
-          ...
-          <input
-            type="tel"
-            name="cvv"
-            placeholder="CVV"
-            onChange={event => setCardCVV(event.target.value)}
-            onFocus={() => setFocusCVV(true)}
-            onBlur={() => setFocusCVV(false)}
-          />
-        </form>
-      </div>
-    );
-  }
+        ...
+        <input
+          type="tel"
+          name="cvv"
+          placeholder="CVV"
+          onChange={(event) => setCardCVV(event.target.value)}
+          onFocus={() => setFocusCVV(true)}
+          onBlur={() => setFocusCVV(false)}
+        />
+      </form>
+    </div>
+  );
 }
 ```
 
