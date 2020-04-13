@@ -72,6 +72,7 @@
   },
   "scripts": {
     "build": "webpack --config ./webpack.config.js",
+    "prepare": "npm run build",
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config webpack.config.js",
     "test": "jest --env=jest-environment-jsdom-sixteen"
   },
