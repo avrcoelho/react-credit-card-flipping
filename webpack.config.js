@@ -8,6 +8,7 @@ const config = {
     path: resolve(__dirname, 'dist'),
     // nome do arquivo que vai ser gerado
     filename: 'index.js',
+    libraryTarget: 'commonjs2',
   },
   devServer: {
     contentBase: join(__dirname, 'public'),

@@ -1,0 +1,11 @@
+src
+demo.gif
+.gitignore
+.babelrc
+.editorconfig
+.eslintrc.json
+.prettierrc.js
+commitlint.config.js
+config-overrides.js
+webpack.config.js
+tsconfig.json

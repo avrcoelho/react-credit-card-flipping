@@ -1,11 +1,12 @@
-!(function (e) {
+module.exports = (function (e) {
   var t = {};
   function r(n) {
     if (t[n]) return t[n].exports;
     var a = (t[n] = { i: n, l: !1, exports: {} });
     return e[n].call(a.exports, a, a.exports, r), (a.l = !0), a.exports;
   }
-  (r.m = e),
+  return (
+    (r.m = e),
     (r.c = t),
     (r.d = function (e, t, n) {
       r.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: n });
@@ -50,7 +51,8 @@
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
     (r.p = ''),
-    r((r.s = 14));
+    r((r.s = 14))
+  );
 })([
   function (e, t, r) {
     'use strict';
