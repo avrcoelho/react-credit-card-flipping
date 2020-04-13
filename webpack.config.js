@@ -17,12 +17,16 @@ const config = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: ['awesome-typescript-loader?module=es6'],
+        use: {
+          loader: 'awesome-typescript-loader',
+        },
         exclude: [/node_modules/],
       },
       {
         test: /\.js$/,
-        loader: 'source-map-loader',
+        use: {
+          loader: 'source-map-loader',
+        },
         enforce: 'pre',
       },
     ],
@@ -30,6 +34,7 @@ const config = {
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
   },
+  externals: { react: 'commonjs react' },
 };
 
 module.exports = config;
