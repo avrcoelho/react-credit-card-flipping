@@ -13,7 +13,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "declaration": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.spec.tsx"]

@@ -1,8 +1,9 @@
 {
   "name": "react-credit-card-flipping",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "description": "Credit card flipping to ReactJS",
   "main": "dist/index.js",
+  "types": "index.d.ts",
   "keywords": [
     "react",
     "reactjs",
