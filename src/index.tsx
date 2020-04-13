@@ -69,7 +69,7 @@ const Card: React.FC<Props> = ({
         cvv={String(cvv).length > 2}
         backgroundColor={backgroundColor}
         filledBackgroundColor={filledBackgroundColor}
-        notEmptyCard={!!name && !!number && !!expiry && expiry.length === 5}>
+        notEmptyCard={!!name && !!number && !!expiry && expiry.length > 4}>
         <div className="card__front card__part" data-testid="card-front">
           <Brand>
             {brand && <img src={brand} alt="Brand" data-testid="brand" />}
