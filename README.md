@@ -1,6 +1,6 @@
 # React Credit Card Flipping
 
-Credit card flipping to ReactJS
+Credit card flipping for ReactJS
 
 ![Demo](demo.gif)
 
@@ -68,9 +68,9 @@ export default function App() {
 - `expiry` {string}: Card expiry date `01/20` - required
 - `cvv` {string|number}: Card CVC/CVV - required
 - `brand` {string}: Card brand `URL` - optional
-- `backgroundColor` {string}: Card background color when are empty. `Default: #DDD` - optional
-- `filledBackgroundColor` {string}: Card background color when aren´t empty. `Default: #134869` - optional
-- `flipCard` {boolean} Flip card when focus or blur CVV input - optional
+- `backgroundColor` {string}: Card background color when empty. `Default: #DDD` - optional
+- `filledBackgroundColor` {string}: Card background color when not empty. `Default: #134869` - optional
+- `flipCard` {boolean} Flip card when there`s focus or blur on CVV input - optional
 - `emptyName` {string} Default value when name is empty. `Default: Cardholder Name` - optional
 
 ## LICENSE
