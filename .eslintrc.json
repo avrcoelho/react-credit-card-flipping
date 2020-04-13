@@ -22,7 +22,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "import", "@typescript-eslint", "react-hooks"],
+  "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
   "rules": {
     "react/jsx-filename-extension": [
       "error",

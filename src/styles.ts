@@ -25,6 +25,7 @@ export const Container = styled.div`
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   perspective: 600px;
+  margin: 50px;
 
   .card__part {
     width: 100%;
