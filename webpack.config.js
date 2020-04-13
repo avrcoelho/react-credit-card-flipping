@@ -16,8 +16,12 @@ const config = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: ['awesome-typescript-loader?module=es6'],
         exclude: [/node_modules/],
+        use: [
+          {
+            loader: 'ts-loader',
+          },
+        ],
       },
       {
         test: /\.js$/,
