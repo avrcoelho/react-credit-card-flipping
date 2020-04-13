@@ -5,9 +5,9 @@ const config = {
     main: resolve('./src/index.tsx'),
   },
   output: {
-    path: resolve(__dirname, 'public'),
+    path: resolve(__dirname, 'build'),
     // nome do arquivo que vai ser gerado
-    filename: 'bundle.js',
+    filename: 'index.js',
   },
   devServer: {
     contentBase: join(__dirname, 'public'),
@@ -16,12 +16,8 @@ const config = {
     rules: [
       {
         test: /\.tsx?$/,
+        loader: ['awesome-typescript-loader?module=es6'],
         exclude: [/node_modules/],
-        use: [
-          {
-            loader: 'ts-loader',
-          },
-        ],
       },
       {
         test: /\.js$/,
