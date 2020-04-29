@@ -63,15 +63,18 @@ export default function App() {
 
 ## Props
 
-- `name` {string}: Cardholder Name - required
-- `number` {string|number}: Card number - required
-- `expiry` {string}: Card expiry date `01/20` - required
-- `cvv` {string|number}: Card CVC/CVV - required
-- `brand` {string}: Card brand `URL` - optional
-- `backgroundColor` {string}: Card background color when empty. `Default: #DDD` - optional
-- `filledBackgroundColor` {string}: Card background color when not empty. `Default: #134869` - optional
-- `flipCard` {boolean} Flip card when there`s focus or blur on CVV input - optional
-- `emptyName` {string} Default value when name is empty. `Default: Cardholder Name` - optional
+| property              | propType         | required | default         | description                                        |
+|-----------------------|------------------|----------|-----------------|----------------------------------------------------|
+| name                  | string           | yes      |                 | Cardholder Name                                    |
+| number                | string \| number | yes      |                 | Card number                                        |
+| expiry                | string           | yes      |                 | Card expiry date 00/00                             |
+| cvv                   | string \| number | yes      |                 | Card CVC/CVV                                       |
+| brand                 | string           | yes      |                 | Card brand URL                                     |
+| backgroundColor       | string           | \-       | \#DDD           | Card background color when empty                   |
+| filledBackgroundColor | string           | \-       | \#134869        | Card background color when not empty               |
+| flipCard              | boolean          | \-       | false           | Flip card when there\`s focus or blur on CVV input |
+| emptyName             | string           | \-       | Cardholder Name |  Default value when name is empty                  |
+
 
 ## LICENSE
 
