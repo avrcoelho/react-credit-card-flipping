@@ -4,7 +4,6 @@ declare type Props = {
     filledBackgroundColor: string | undefined;
     backgroundColor: string | undefined;
 };
-export declare const GlobalStyles: import("styled-components").GlobalStyleComponent<{}, import("styled-components").DefaultTheme>;
 export declare const Container: import("styled-components").StyledComponent<"div", any, Props, never>;
 export declare const Brand: import("styled-components").StyledComponent<"div", any, {}, never>;
 export declare const CardInfo: import("styled-components").StyledComponent<"div", any, {}, never>;

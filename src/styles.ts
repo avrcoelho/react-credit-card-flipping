@@ -7,18 +7,6 @@ type Props = {
   backgroundColor: string | undefined;
 };
 
-export const GlobalStyles = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
-  }
-`;
-
 export const Container = styled.div`
   width: 300px;
   height: 171px;
@@ -26,6 +14,12 @@ export const Container = styled.div`
   -moz-perspective: 600px;
   perspective: 600px;
   margin: 50px;
+
+  box-sizing: border-box;
+  outline: 0;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-family: 'Bitstream Vera Sans Mono', Consolas, Courier, monospace;
 
   .card__part {
     width: 100%;

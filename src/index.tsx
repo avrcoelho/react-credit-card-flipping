@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react';
 
 import {
-  GlobalStyles,
   Container,
   Brand,
   CardInfo,
@@ -62,7 +61,6 @@ const Card: React.FC<Props> = ({
 
   return (
     <>
-      <GlobalStyles />
       <Container
         data-testid="card"
         className={flipCard ? 'active' : ''}
